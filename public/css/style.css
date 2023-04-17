@@ -1,0 +1,8 @@
+.logo{
+    width: 100px;
+    align-items: center;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
+}
