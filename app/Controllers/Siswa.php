@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\Data_pd_Model;
+
+
 // use App\Models\Data_pd_Model;
 
 class Siswa extends BaseController
@@ -41,22 +44,37 @@ class Siswa extends BaseController
         return view('siswa/tambah', $data);
     }
 
-    // public function save()
-    // {
-    //     //dd($this->request->getVar());
-    //     $this->data_pd_Model->save([
-    //         'nis' => $this->request->getVar('nis'),
-    //         'nama' => $this->request->getVar('nama'),
-    //         'tempat_lahir' => $this->request->getVar('tempat_lahir'),
-    //         'tgl_lahir' => $this->request->getVar('tgl_lahir'),
-    //         'agama' => $this->request->getVar('agama'),
-    //         'status_dlm_kel' => $this->request->getVar('status_dlm_kel'),
-    //         'anak_ke' => $this->request->getVar('anak_ke'),
-    //         'no_telp' => $this->request->getVar('no_telp')
-    //     ]);
+    public function save()
+    {
+        // dd($this->request->getVar());
+        // $this->data_pd_Model->save([
+        $siswa = new Data_pd_Model();
+        $siswa->insert([
+            'nis' => $this->request->getVar('nis'),
+            'nama' => $this->request->getVar('nama'),
+            'tempat_lahir' => $this->request->getVar('tempat_lahir'),
+            'tgl_lahir' => $this->request->getVar('tgl_lahir'),
+            'agama' => $this->request->getVar('agama'),
+            'j_k' => $this->request->getVar('j_k'),
+            'status_dlm_kel' => $this->request->getVar('status_dlm_kel'),
+            'anak_ke' => $this->request->getVar('anak_ke'),
+            'no_telp' => $this->request->getVar('no_telp')
+            // 'alamat' => $this->request->getVar('alamat'),
+            // 'kelurahan' => $this->request->getVar('kelurahan'),
+            // 'kecamatan' => $this->request->getVar('kecamatan'),
+            // 'kabupaten' => $this->request->getVar('kabupaten'),
+            // 'kewarganegaraan' => $this->request->getVar('kewarganegaraan'),
+            // 'gol_dar' => $this->request->getVar('gol_dar'),
+            // 'penyakit' => $this->request->getVar('penyakit'),
+            // 'kelainan_jas' => $this->request->getVar('kelainan_jas'),
+            // 'bb' => $this->request->getVar('bb'),
+            // 'tb' => $this->request->getVar('tb')
 
+        ]);
 
+        return redirect('admin/siswa');
+        // ]);
+        // return redirect()->to('/siswa');
 
-    //     return redirect()->to('/siswa');
-    // }
+    }
 }

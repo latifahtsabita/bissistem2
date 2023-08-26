@@ -6,7 +6,7 @@
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
     <div class="row">
         <div class="col">
-            <a href="/siswa/tambah" class="btn btn-primary mb-3">Tambah Data Peserta Didik</a>
+            <a href="admin/tambah" class="btn btn-primary mb-3">Tambah Data Peserta Didik</a>
             <table class="table table-striped mt-1">
                 <thead>
                     <tr>
@@ -29,7 +29,10 @@
                             <td><?= $siswa->j_k; ?></td>
                             <td></td>
                             <td>
-                                <a href="" class="btn btn-info">Detail</a>
+                                <a href="<?= base_url('siswa/detailsiswa'); ?>" class="btn btn-info">Detail</a>
+                            </td>
+                            <td>
+                                <a href="" class="btn btn-warning">Edit</a>
                             </td>
                         </tr>
                     <?php endforeach ?>
