@@ -10,5 +10,5 @@ class Data_pd_Model extends Model
     // protected $useTimestamps = true;
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nis', 'nama', 'tempat_lahir', 'tgl_lahir', 'j_k', 'agama', 'status_dlm_kel', 'anak_ke', 'no_telp', 'file_foto'];
+    protected $allowedFields = ['nis', 'nama', 'tempat_lahir', 'tgl_lahir', 'j_k', 'agama', 'status_dlm_kel', 'anak_ke', 'no_telp', 'file_foto', 'alamat', 'kelurahan', 'kecamatan', 'kabupaten', 'kewarganegaraan', 'gol_dar', 'penyakit', 'kelainan_jas', 'bb', 'tb'];
 }

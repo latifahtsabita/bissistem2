@@ -86,7 +86,7 @@
 
                     </div>
 
-                    <!-- <div class="card mb-3">
+                    <div class="card mb-3">
                         <div class="card-header">
                             Data Kependudukan
                         </div>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="card mb-3">
+                    <!-- <div class="card mb-3">
                         <div class="card-header">
                             Data Ayah
                         </div>
@@ -441,9 +441,9 @@
                             </form>
 
                         </div>
-                    </div> -->
+                    </div>
                 </form>
-            </form>
+            </form> -->
 
 
         </div>

@@ -30,9 +30,9 @@ class Siswa extends BaseController
 
     public function detail()
     {
-        $data = [
-            'title' => 'Detail Data Peserta Didik'
-        ];
+        $data ['title'] = 'Detail Data Peserta Didik';
+
+        $this->builder->select('');
     }
 
     public function tambah()
@@ -58,17 +58,17 @@ class Siswa extends BaseController
             'j_k' => $this->request->getVar('j_k'),
             'status_dlm_kel' => $this->request->getVar('status_dlm_kel'),
             'anak_ke' => $this->request->getVar('anak_ke'),
-            'no_telp' => $this->request->getVar('no_telp')
-            // 'alamat' => $this->request->getVar('alamat'),
-            // 'kelurahan' => $this->request->getVar('kelurahan'),
-            // 'kecamatan' => $this->request->getVar('kecamatan'),
-            // 'kabupaten' => $this->request->getVar('kabupaten'),
-            // 'kewarganegaraan' => $this->request->getVar('kewarganegaraan'),
-            // 'gol_dar' => $this->request->getVar('gol_dar'),
-            // 'penyakit' => $this->request->getVar('penyakit'),
-            // 'kelainan_jas' => $this->request->getVar('kelainan_jas'),
-            // 'bb' => $this->request->getVar('bb'),
-            // 'tb' => $this->request->getVar('tb')
+            'no_telp' => $this->request->getVar('no_telp'),
+            'alamat' => $this->request->getVar('alamat'),
+            'kelurahan' => $this->request->getVar('kelurahan'),
+            'kecamatan' => $this->request->getVar('kecamatan'),
+            'kabupaten' => $this->request->getVar('kabupaten'),
+            'kewarganegaraan' => $this->request->getVar('kewarganegaraan'),
+            'gol_dar' => $this->request->getVar('gol_dar'),
+            'penyakit' => $this->request->getVar('penyakit'),
+            'kelainan_jas' => $this->request->getVar('kelainan_jas'),
+            'bb' => $this->request->getVar('bb'),
+            'tb' => $this->request->getVar('tb')
 
         ]);
 

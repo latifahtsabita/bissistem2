@@ -34,6 +34,9 @@
                             <td>
                                 <a href="" class="btn btn-warning">Edit</a>
                             </td>
+                            <td>
+                                <a href="" class="btn btn-danger">Hapus</a>
+                            </td>
                         </tr>
                     <?php endforeach ?>
                 </tbody>

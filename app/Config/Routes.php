@@ -40,12 +40,11 @@ $routes->get('/admin/(:num)', 'Admin::detail/$1', ['filter' => 'role:admin']);
 
 // $routes->get('/siswa/(:segment)', 'Siswa::detail/$1');
 
-$routes->group('admin', function($routes){
+$routes->group('admin', function ($routes) {
     $routes->get('tambah', 'Siswa::tambah');
     $routes->get('tambahaksi', 'Siswa::save');
     $routes->get('siswa', 'Siswa::index');
-    
-
+    $routes->get('detailsiswa', 'Siswa::detailsiswa');
 });
 
 
