@@ -27,7 +27,7 @@
                             <td><?= $user->email; ?></td>
                             <td><?= $user->name; ?></td>
                             <td>
-                                <a href="<?= base_url('admin/' . $user->userid); ?>" class="btn btn-info">detail</a>
+                                <a href="<?= base_url('admin/' . $user->user); ?>" class="btn btn-info">detail</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
