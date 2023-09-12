@@ -25,6 +25,7 @@ class Admin extends BaseController
         $data['users'] = $query->getResult();
 
         return view('admin/index', $data);
+        // return print_r($data['users']);
     }
 
     public function detail($id = 0)
