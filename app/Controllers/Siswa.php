@@ -69,7 +69,6 @@ class Siswa extends BaseController
             'kelainan_jas' => $this->request->getVar('kelainan_jas'),
             'bb' => $this->request->getVar('bb'),
             'tb' => $this->request->getVar('tb')
-
         ]);
 
         return redirect('admin/siswa');
